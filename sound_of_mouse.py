@@ -9,6 +9,7 @@ def main(mouse_position: tuple):
     p = pyaudio.PyAudio()     #initialize pyaudio
     BITRATE = 5000     #number of frames per second/frameset.
     FREQUENCY = int((mouse_position[0] * mouse_position[1]) / 103.68)  # Hz
+    FREQUENCY = FREQUENCY if FREQUENCY != 0 else 1
     LENGTH = .1    #seconds to play sound
 
     if FREQUENCY > BITRATE:
@@ -18,10 +19,10 @@ def main(mouse_position: tuple):
     WAVEDATA = ''
 
     #generating waves
-    for x in range(NUMBEROFFRAMES):
-        WAVEDATA += chr(int(math.sin(x/((BITRATE/FREQUENCY)/math.pi))*127+128))
+    for x in range(1, NUMBEROFFRAMES + 1):
+        WAVEDATA += chr(int(math.sin(x / ( (BITRATE/FREQUENCY) / math.pi )) * 127 + 128))
     for x in range(RESTFRAMES):
-        WAVEDATA = WAVEDATA+chr(128)
+        WAVEDATA = WAVEDATA + chr(128)
 
     stream = p.open(format = p.get_format_from_width(1),
                     channels = 2,
@@ -31,15 +32,12 @@ def main(mouse_position: tuple):
     #stream.stop_stream()
     #stream.close()
     #p.terminate()
-    #sleep(LENGTH)
 
 
 if __name__ == "__main__":
-    mouse_position = (0, 0)
     while True:
         if (mouse_position := mouse.get_position()) == mouse.get_position():
-
             #sleep(1/60)
-            pass
+            continue
         else:
             main(mouse_position)
