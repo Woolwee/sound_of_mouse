@@ -23,7 +23,10 @@ def main(mouse_position: tuple):
     for x in range(RESTFRAMES):
         WAVEDATA = WAVEDATA+chr(128)
 
-    stream = p.open(format = p.get_format_from_width(1),channels = 2,rate = BITRATE,output = True)
+    stream = p.open(format = p.get_format_from_width(1),
+                    channels = 2,
+                    rate = BITRATE,
+                    output = True)
     stream.write(WAVEDATA)
     #stream.stop_stream()
     #stream.close()
