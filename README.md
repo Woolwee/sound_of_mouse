@@ -5,7 +5,7 @@
 - [Description](#description)
 - [Install](#install)
 - [Usage](#usage)
-- [To Do](#todo)
+- [To Do](#to-do)
 
 ## Description ##
 **Задание:**
@@ -40,7 +40,7 @@ poetrry run python sound_of_mouse.py
 python sound_of_mouse.py
 ```
 
-Here You could hear the beutiful sond of your processor working
+Here You could hear the beutiful sound any-time You are moving a mouse.
 
 ## To Do ##
 1. refactor program code to OOP style
