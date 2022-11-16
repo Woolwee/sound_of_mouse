@@ -1,10 +1,11 @@
 <h1>sound_of_mouse</h1>
 
 <h2>Table of content</h2>
+
 - [Description](#description)
 - [Install](#install)
 - [Usage](#usage)
-- [To Do] (#todo)
+- [To Do](#todo)
 
 ## Description ##
 **Задание:**
@@ -41,7 +42,7 @@ python sound_of_mouse.py
 
 Here You could hear the beutiful sond of your processor working
 
-**To Do:**
+## To Do ##
 1. refactor program code to OOP style
 2. fix app crash bug
 3. make code clean and PEP8 friendly
