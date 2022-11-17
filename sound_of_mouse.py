@@ -5,6 +5,7 @@ from time import sleep
 
 
 def main(mouse_position: tuple):
+    '''This is just temp function until I implement OOP'''
 
     BITRATE = 5000     #number of frames per second/frameset.
     LENGTH = .15    #seconds to play sound
