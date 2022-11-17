@@ -12,9 +12,9 @@
 написать на python программу в ООП стиле, которая генерирует звуки(любые) в зависимости от скорости и направления движения мышкой. (двигаешь мышь, получаешь звук).
 
 ## Install ##
-**To install run one of these block POSIX terminal**
+**To install the app run one of these blocks in terminal**
 
-- if You use poetry:
+- if poetry:
 ```
 git clone https://github.com/sunCelery/sound_of_mouse.git && \
 cd sound_of_mouse && \
@@ -29,11 +29,11 @@ python -m pip install --upgrade pip && pip install -r requirements.txt
 ```
 
 ## Usage ##
-**To launch app run one of these block POSIX terminal**
+**To launch the app run one of these blocks in terminal**
 
-- if You use poetry:
+- if poetry:
 ```
-poetrry run python sound_of_mouse.py
+poetry run python sound_of_mouse.py
 ```
 - else:
 ```
